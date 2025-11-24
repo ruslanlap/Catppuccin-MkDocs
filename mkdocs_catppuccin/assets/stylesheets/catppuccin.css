@@ -458,7 +458,7 @@
 .md-typeset :not(pre)>code {
   background-color: var(--md-code-hl-color);
   padding: 0.1rem 0.3rem;
-  border-radius: 0.2rem;
+  border-radius: 0;
 }
 
 /* Links */
@@ -512,7 +512,7 @@
 
 ::-webkit-scrollbar-thumb {
   background: var(--md-code-hl-color);
-  border-radius: 0.25rem;
+  border-radius: 0;
 }
 
 ::-webkit-scrollbar-thumb:hover {
@@ -847,7 +847,7 @@
 /* Code copy button - Catppuccin style */
 .md-clipboard {
   background-color: var(--md-accent-fg-color) !important;
-  border-radius: 0.2rem;
+  border-radius: 0;
   opacity: 0.9;
   transition: opacity 0.2s, background-color 0.2s;
 }
@@ -948,16 +948,38 @@
 
 /* Inactive tabs */
 .md-typeset .tabbed-labels .tabbed-label {
-  color: var(--md-default-fg-color);
-  opacity: 0.6;
-  transition: opacity 0.2s, color 0.2s, border-bottom-color 0.2s;
+  color: color-mix(in srgb, var(--md-default-fg-color) 40%, var(--md-default-bg-color) 60%) !important;
+  opacity: 1;
+  border-bottom: 0.15rem solid transparent;
+  transition: opacity 0.15s, color 0.15s, border-bottom-color 0.15s;
+}
+
+.md-typeset .tabbed-labels .tabbed-label a {
+  color: color-mix(in srgb, var(--md-default-fg-color) 40%, var(--md-default-bg-color) 60%) !important;
+  text-decoration: none;
 }
 
 /* Hover state */
 .md-typeset .tabbed-labels .tabbed-label:hover {
   color: var(--md-accent-fg-color);
-  opacity: 0.8;
+  opacity: 1;
+  text-decoration: underline;
   cursor: pointer;
+}
+
+.md-typeset .tabbed-labels .tabbed-label:hover a {
+  color: var(--md-accent-fg-color);
+}
+
+/* Direct tab links (linked tab style) */
+.md-typeset .tabbed-labels a {
+  color: color-mix(in srgb, var(--md-default-fg-color) 40%, var(--md-default-bg-color) 60%) !important;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.md-typeset .tabbed-labels a:hover {
+  color: var(--md-accent-fg-color);
 }
 
 /* Active tab - The complex selector is needed to override Material's default */
@@ -968,11 +990,56 @@
 .md-typeset .tabbed-set>input:nth-child(5):checked~.tabbed-labels> :nth-child(5) {
   color: var(--md-accent-fg-color) !important;
   border-bottom-color: var(--md-accent-fg-color) !important;
+  background: color-mix(in srgb, var(--md-accent-fg-color) 10%, transparent);
   opacity: 1;
+  font-weight: 700;
+}
+
+.md-typeset .tabbed-set>input:nth-child(1):checked~.tabbed-labels> :nth-child(1) a,
+.md-typeset .tabbed-set>input:nth-child(2):checked~.tabbed-labels> :nth-child(2) a,
+.md-typeset .tabbed-set>input:nth-child(3):checked~.tabbed-labels> :nth-child(3) a,
+.md-typeset .tabbed-set>input:nth-child(4):checked~.tabbed-labels> :nth-child(4) a,
+.md-typeset .tabbed-set>input:nth-child(5):checked~.tabbed-labels> :nth-child(5) a {
+  color: var(--md-accent-fg-color) !important;
 }
 
 /* Tab content container */
 .md-typeset .tabbed-content {
   background-color: transparent;
-  border-radius: 0 0 0.2rem 0.2rem;
+  border-radius: 0;
+  border-top: 0.1rem solid var(--md-code-hl-color);
+}
+
+/* Keyboard focus on tabs */
+.md-typeset .tabbed-set input:focus-visible + .tabbed-labels .tabbed-label {
+  outline: 0.15rem solid var(--md-accent-fg-color);
+  outline-offset: 0.15rem;
+}
+
+/* Typography-focused refinements */
+.md-typeset h1,
+.md-typeset h2,
+.md-typeset h3 {
+  color: var(--md-primary-fg-color);
+  font-weight: 750;
+  letter-spacing: 0.01em;
+}
+
+.md-typeset h4,
+.md-typeset h5,
+.md-typeset h6 {
+  color: var(--md-typeset-color);
+  font-weight: 700;
+  letter-spacing: 0.005em;
+}
+
+.md-typeset a {
+  color: var(--md-accent-fg-color);
+  font-weight: 600;
+  text-decoration-color: color-mix(in srgb, var(--md-accent-fg-color) 45%, transparent);
+}
+
+.md-typeset a:hover {
+  color: var(--md-primary-fg-color--light);
+  text-decoration: underline;
 }

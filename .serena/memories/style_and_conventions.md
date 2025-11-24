@@ -1,0 +1,4 @@
+- Python: no explicit linter/formatter; follow PEP 8, docstrings minimal; package version in __init__.py.
+- MkDocs/Material config lives in mkdocs.yml; theme extends Material via mkdocs_theme.yml and custom CSS. Keep YAML indentation 2 spaces.
+- CSS: uses Catppuccin variables; keep ASCII, favor kebab-case for class names if added.
+- Naming: package `mkdocs_catppuccin`; assets under assets/stylesheets. Keep palettes/flavor names consistent (latte, frappe, macchiato, mocha).

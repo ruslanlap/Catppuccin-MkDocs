@@ -29,7 +29,7 @@ ENV/
 env/
 .venv
 venv/
-
+AGENTS.md   
 # IDEs
 .vscode/
 .idea/
