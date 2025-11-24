@@ -1,9 +1,9 @@
 # 🎨 MkDocs Catppuccin Theme
-![Catppuccin MkDocs Logo](mkdocs_catppuccin/assets/logo.png)
+![Catppuccin MkDocs Logo](mkdocs_catppuccin/assets/logo.png) width="200"
 
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/catppuccin/catppuccin/main/assets/palette/macchiato.png" width="200" alt="Catppuccin Palette"/>
+  <img src="https://raw.githubusercontent.com/catppuccin/catppuccin/main/assets/palette/macchiato.png" width="400" alt="Catppuccin Palette"/>
 </p>
 
 <p align="center">
