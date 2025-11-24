@@ -1,5 +1,0 @@
-- Purpose: MkDocs theme that extends Material for MkDocs using the Catppuccin pastel palettes (4 flavors). Distributed as Python package `mkdocs-catppuccin` with entry point `mkdocs_catppuccin`.
-- Tech stack: Python 3.8+; MkDocs + mkdocs-material; theme assets (CSS, logo); packaged via setuptools/pyproject.
-- Structure: `mkdocs_catppuccin/` theme package with `mkdocs_theme.yml` and assets/stylesheets/catppuccin.css; demo docs in `docs/` with config pages and assets; site config at `mkdocs.yml`; project metadata in `pyproject.toml`; root CSS `catppuccin.css` (repo copy).
-- Tests: none present.
-- Notable config: `mkdocs_theme.yml` extends material and pulls CSS; `__init__.py` sets __version__=0.1.0; mkdocs.yml defines palettes, nav, extra CSS, plugins, and markdown extensions.

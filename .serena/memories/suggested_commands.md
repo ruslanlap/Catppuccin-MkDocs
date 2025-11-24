@@ -1,6 +1,0 @@
-- Create venv: `python3 -m venv .venv && source .venv/bin/activate`.
-- Install deps: `pip install -e .` for local dev; or `pip install mkdocs mkdocs-material` if not already present.
-- Serve docs locally: `mkdocs serve --livereload` using repo `mkdocs.yml` (renders demo site with theme).
-- Build site: `mkdocs build` (output in `site/`).
-- Deploy via GitHub Pages: `mkdocs gh-deploy`.
-- Package build (if needed): `python -m build` (requires `build` package).

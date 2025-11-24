@@ -1,4 +1,0 @@
-- Run `mkdocs serve` or `mkdocs build` to ensure theme loads without errors after changes.
-- If packaging changes, ensure `python -m build` succeeds and version updated in `mkdocs_catppuccin/__init__.py`.
-- No automated tests present; rely on manual visual check of demo site (nav, palettes, assets) when possible.
-- Update docs in `docs/` and `mkdocs.yml` if behavior/config options change.
