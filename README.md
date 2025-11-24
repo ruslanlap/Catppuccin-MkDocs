@@ -6,8 +6,9 @@
   <img src="https://raw.githubusercontent.com/catppuccin/catppuccin/main/assets/palette/macchiato.png" width="400" alt="Catppuccin Palette"/>
 </p>
 <p align="center">
-  <img src="https://ruslanlap.github.io/Catppuccin-MkDocs/" width="400" alt="Demo site"/>
+  <a href="https://ruslanlap.github.io/Catppuccin-MkDocs/"><img src="https://img.shields.io/badge/Demo%20Site-Visit%20Now-brightgreen?style=for-the-badge" alt="Demo site"/></a>
 </p>
+
 
 
 <p align="center">
