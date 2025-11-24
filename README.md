@@ -6,6 +6,8 @@
   <img src="https://raw.githubusercontent.com/catppuccin/catppuccin/main/assets/palette/macchiato.png" width="400" alt="Catppuccin Palette"/>
 </p>
 
+[Demo site](https://ruslanlap.github.io/Catppuccin-MkDocs/)
+
 <p align="center">
   <strong>
     Soothing pastel theme for MkDocs based on the Catppuccin color palette
