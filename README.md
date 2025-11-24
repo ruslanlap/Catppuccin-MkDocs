@@ -1,5 +1,5 @@
 # 🎨 MkDocs Catppuccin Theme
-![Catppuccin MkDocs Logo](mkdocs_catppuccin/assets/logo.png) width="200"
+<img src="mkdocs_catppuccin/assets/logo.png" width="200" alt="Catppuccin MkDocs Logo"/>
 
 
 <p align="center">
