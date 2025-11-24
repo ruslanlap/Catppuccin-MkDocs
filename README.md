@@ -155,52 +155,48 @@ Create `docs/stylesheets/extra.css` file for your customizations:
 }
 ```
 
-#### Changing Accent Color
+#### 🎨 Changing Accent Color (New Simplified Method!)
 
-By default, the theme uses **Green** as the accent color (for links, active navigation, etc.). You can change it to any Catppuccin color you prefer!
+The theme uses **Green** as the default accent color for all flavors. You can now change the accent color for **all themes in just one place**!
 
-**Example: Change accent from Green to Pink**
+**Super Easy Method** (Recommended):
 
-Add this to your `docs/stylesheets/extra.css`:
+1. Open `docs/stylesheets/catppuccin.css`
+2. Find the **ACCENT COLOR CONFIGURATION** section at the top (lines 5-18)
+3. Change `green` to any color you want in just **4 lines**!
+
+**Example - Change from Green to Pink:**
 
 ```css
-/* Change accent color to Pink */
-[data-md-color-scheme="latte"] {
-  --md-accent-fg-color: var(--ctp-latte-pink);
-  --md-accent-fg-color--transparent: rgba(234, 118, 203, 0.1);
-}
-
-[data-md-color-scheme="frappe"] {
-  --md-accent-fg-color: var(--ctp-frappe-pink);
-  --md-accent-fg-color--transparent: rgba(244, 184, 228, 0.1);
-}
-
-[data-md-color-scheme="macchiato"] {
-  --md-accent-fg-color: var(--ctp-macchiato-pink);
-  --md-accent-fg-color--transparent: rgba(245, 189, 230, 0.1);
-}
-
-[data-md-color-scheme="mocha"] {
-  --md-accent-fg-color: var(--ctp-mocha-pink);
-  --md-accent-fg-color--transparent: rgba(245, 194, 231, 0.1);
+/* ========================================
+   ACCENT COLOR CONFIGURATION
+   Change these to modify the accent color for all themes in one place!
+   Available colors: green, pink, blue, mauve, lavender, sky, teal, etc.
+   ======================================== */
+:root {
+    /* Change these 4 lines to switch accent colors for all themes */
+    --accent-latte: var(--ctp-latte-pink);
+    /* Default: green, Try: var(--ctp-latte-pink) */
+    --accent-frappe: var(--ctp-frappe-pink);
+    /* Default: green, Try: var(--ctp-frappe-pink) */
+    --accent-macchiato: var(--ctp-macchiato-pink);
+    /* Default: green, Try: var(--ctp-macchiato-pink) */
+    --accent-mocha: var(--ctp-mocha-pink);
+    /* Default: green, Try: var(--ctp-mocha-pink) */
 }
 ```
 
-**Available Catppuccin colors for accent:**
-- `pink` - Soft pink (shown above)
-- `mauve` - Purple
-- `blue` - Blue
-- `sapphire` - Cyan-blue
-- `sky` - Light cyan
-- `teal` - Teal
-- `green` - Green (default)
-- `yellow` - Yellow
-- `peach` - Orange
-- `red` - Red
-- `maroon` - Dark red
-- `lavender` - Light purple
+**Available Catppuccin colors:**
+`pink`, `mauve`, `blue`, `sapphire`, `sky`, `teal`, `green`, `yellow`, `peach`, `red`, `maroon`, `lavender`, `flamingo`, `rosewater`
 
-Just replace `pink` with any color name from the list above in the CSS variables!
+**What gets changed:**
+- ✅ Link colors
+- ✅ Navigation active states  
+- ✅ Hover effects
+- ✅ Code syntax highlighting (strings)
+- ✅ Success admonitions
+- ✅ Scrollbar hover
+- ✅ Table of contents active items
 
 ### Step 5: All 4 Color Schemes
 

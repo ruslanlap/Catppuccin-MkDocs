@@ -2,6 +2,23 @@
 /* Documentation: https://github.com/catppuccin/catppuccin */
 
 /* ========================================
+   ACCENT COLOR CONFIGURATION
+   Change these to modify the accent color for all themes in one place!
+   Available colors: green, pink, blue, mauve, lavender, sky, teal, etc.
+   ======================================== */
+:root {
+    /* Change these 4 lines to switch accent colors for all themes */
+    --accent-latte: var(--ctp-latte-green);
+    /* Default: green, Try: var(--ctp-latte-pink) */
+    --accent-frappe: var(--ctp-frappe-green);
+    /* Default: green, Try: var(--ctp-frappe-pink) */
+    --accent-macchiato: var(--ctp-macchiato-green);
+    /* Default: green, Try: var(--ctp-macchiato-pink) */
+    --accent-mocha: var(--ctp-mocha-green);
+    /* Default: green, Try: var(--ctp-mocha-pink) */
+}
+
+/* ========================================
    Catppuccin Latte (Light Theme)
    ======================================== */
 :root {
@@ -155,14 +172,14 @@
     --md-primary-bg-color--light: var(--ctp-latte-subtext1);
 
     /* Accent colors */
-    --md-accent-fg-color: var(--ctp-latte-green);
+    --md-accent-fg-color: var(--accent-latte);
     --md-accent-fg-color--transparent: rgba(64, 160, 43, 0.1);
     --md-accent-bg-color: var(--ctp-latte-text);
     --md-accent-bg-color--light: var(--ctp-latte-subtext1);
 
     /* Typography */
     --md-typeset-color: var(--ctp-latte-text);
-    --md-typeset-a-color: var(--ctp-latte-green);
+    --md-typeset-a-color: var(--accent-latte);
 
     /* Code blocks */
     --md-code-hl-color: var(--ctp-latte-surface0);
@@ -171,7 +188,7 @@
     --md-code-hl-function-color: var(--ctp-latte-blue);
     --md-code-hl-constant-color: var(--ctp-latte-peach);
     --md-code-hl-keyword-color: var(--ctp-latte-mauve);
-    --md-code-hl-string-color: var(--ctp-latte-green);
+    --md-code-hl-string-color: var(--accent-latte);
     --md-code-hl-name-color: var(--ctp-latte-text);
     --md-code-hl-operator-color: var(--ctp-latte-sky);
     --md-code-hl-punctuation-color: var(--ctp-latte-overlay2);
@@ -217,14 +234,14 @@
     --md-primary-bg-color--light: var(--ctp-frappe-subtext1);
 
     /* Accent colors */
-    --md-accent-fg-color: var(--ctp-frappe-green);
+    --md-accent-fg-color: var(--accent-frappe);
     --md-accent-fg-color--transparent: rgba(166, 209, 137, 0.1);
     --md-accent-bg-color: var(--ctp-frappe-text);
     --md-accent-bg-color--light: var(--ctp-frappe-subtext1);
 
     /* Typography */
     --md-typeset-color: var(--ctp-frappe-text);
-    --md-typeset-a-color: var(--ctp-frappe-green);
+    --md-typeset-a-color: var(--accent-frappe);
 
     /* Code blocks */
     --md-code-hl-color: var(--ctp-frappe-surface0);
@@ -233,7 +250,7 @@
     --md-code-hl-function-color: var(--ctp-frappe-blue);
     --md-code-hl-constant-color: var(--ctp-frappe-peach);
     --md-code-hl-keyword-color: var(--ctp-frappe-mauve);
-    --md-code-hl-string-color: var(--ctp-frappe-green);
+    --md-code-hl-string-color: var(--accent-frappe);
     --md-code-hl-name-color: var(--ctp-frappe-text);
     --md-code-hl-operator-color: var(--ctp-frappe-sky);
     --md-code-hl-punctuation-color: var(--ctp-frappe-overlay2);
@@ -279,14 +296,14 @@
     --md-primary-bg-color--light: var(--ctp-macchiato-subtext1);
 
     /* Accent colors */
-    --md-accent-fg-color: var(--ctp-macchiato-green);
+    --md-accent-fg-color: var(--accent-macchiato);
     --md-accent-fg-color--transparent: rgba(166, 218, 149, 0.1);
     --md-accent-bg-color: var(--ctp-macchiato-text);
     --md-accent-bg-color--light: var(--ctp-macchiato-subtext1);
 
     /* Typography */
     --md-typeset-color: var(--ctp-macchiato-text);
-    --md-typeset-a-color: var(--ctp-macchiato-green);
+    --md-typeset-a-color: var(--accent-macchiato);
 
     /* Code blocks */
     --md-code-hl-color: var(--ctp-macchiato-surface0);
@@ -295,7 +312,7 @@
     --md-code-hl-function-color: var(--ctp-macchiato-blue);
     --md-code-hl-constant-color: var(--ctp-macchiato-peach);
     --md-code-hl-keyword-color: var(--ctp-macchiato-mauve);
-    --md-code-hl-string-color: var(--ctp-macchiato-green);
+    --md-code-hl-string-color: var(--accent-macchiato);
     --md-code-hl-name-color: var(--ctp-macchiato-text);
     --md-code-hl-operator-color: var(--ctp-macchiato-sky);
     --md-code-hl-punctuation-color: var(--ctp-macchiato-overlay2);
@@ -341,14 +358,14 @@
     --md-primary-bg-color--light: var(--ctp-mocha-subtext1);
 
     /* Accent colors */
-    --md-accent-fg-color: var(--ctp-mocha-green);
+    --md-accent-fg-color: var(--accent-mocha);
     --md-accent-fg-color--transparent: rgba(166, 227, 161, 0.1);
     --md-accent-bg-color: var(--ctp-mocha-text);
     --md-accent-bg-color--light: var(--ctp-mocha-subtext1);
 
     /* Typography */
     --md-typeset-color: var(--ctp-mocha-text);
-    --md-typeset-a-color: var(--ctp-mocha-green);
+    --md-typeset-a-color: var(--accent-mocha);
 
     /* Code blocks */
     --md-code-hl-color: var(--ctp-mocha-surface0);
@@ -357,7 +374,7 @@
     --md-code-hl-function-color: var(--ctp-mocha-blue);
     --md-code-hl-constant-color: var(--ctp-mocha-peach);
     --md-code-hl-keyword-color: var(--ctp-mocha-mauve);
-    --md-code-hl-string-color: var(--ctp-mocha-green);
+    --md-code-hl-string-color: var(--accent-mocha);
     --md-code-hl-name-color: var(--ctp-mocha-text);
     --md-code-hl-operator-color: var(--ctp-mocha-sky);
     --md-code-hl-punctuation-color: var(--ctp-mocha-overlay2);
@@ -636,7 +653,7 @@
 [data-md-color-scheme="latte"] .md-typeset .success>.admonition-title,
 [data-md-color-scheme="latte"] .md-typeset .success>summary {
     background-color: rgba(64, 160, 43, 0.15);
-    color: var(--ctp-latte-green);
+    color: var(--accent-latte);
 }
 
 /* Frappé (Dark Theme) Admonitions */
@@ -673,7 +690,7 @@
 [data-md-color-scheme="frappe"] .md-typeset .success>.admonition-title,
 [data-md-color-scheme="frappe"] .md-typeset .success>summary {
     background-color: rgba(166, 209, 137, 0.15);
-    color: var(--ctp-frappe-green);
+    color: var(--accent-frappe);
 }
 
 /* Macchiato (Dark Theme) Admonitions */
@@ -710,7 +727,7 @@
 [data-md-color-scheme="macchiato"] .md-typeset .success>.admonition-title,
 [data-md-color-scheme="macchiato"] .md-typeset .success>summary {
     background-color: rgba(166, 218, 149, 0.15);
-    color: var(--ctp-macchiato-green);
+    color: var(--accent-macchiato);
 }
 
 /* Mocha (Dark Theme) Admonitions */
@@ -747,7 +764,7 @@
 [data-md-color-scheme="mocha"] .md-typeset .success>.admonition-title,
 [data-md-color-scheme="mocha"] .md-typeset .success>summary {
     background-color: rgba(166, 227, 161, 0.15);
-    color: var(--ctp-mocha-green);
+    color: var(--accent-mocha);
 }
 
 /* Improve code block contrast */
