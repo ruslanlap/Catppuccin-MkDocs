@@ -5,8 +5,10 @@
 <p align="center">
   <img src="https://raw.githubusercontent.com/catppuccin/catppuccin/main/assets/palette/macchiato.png" width="400" alt="Catppuccin Palette"/>
 </p>
+<p align="center">
+  <img src="https://ruslanlap.github.io/Catppuccin-MkDocs/" width="400" alt="Demo site"/>
+</p>
 
-[Demo site](https://ruslanlap.github.io/Catppuccin-MkDocs/)
 
 <p align="center">
   <strong>
