@@ -1,4 +1,6 @@
 # 🎨 MkDocs Catppuccin Theme
+![Catppuccin MkDocs Logo](mkdocs_catppuccin/assets/logo.png)
+
 
 <p align="center">
   <img src="https://raw.githubusercontent.com/catppuccin/catppuccin/main/assets/palette/macchiato.png" width="400" alt="Catppuccin Palette"/>
