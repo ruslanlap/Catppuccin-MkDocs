@@ -1,0 +1,104 @@
+site_name: MkDocs with Catppuccin Theme
+site_description: Beautiful MkDocs documentation with all 4 Catppuccin flavors
+site_url: https://ruslanlap.github.io/mkdocs-catppuccin/
+repo_url: https://github.com/ruslanlap/mkdocs-catppuccin
+repo_name: ruslanlap/mkdocs-catppuccin
+
+theme:
+  name: catppuccin
+  palette:
+    # Catppuccin Latte (Light mode)
+    - scheme: latte
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to Frappé
+
+    # Catppuccin Frappé (Dark mode - coolest)
+    - scheme: frappe
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/weather-night
+        name: Switch to Macchiato
+
+    # Catppuccin Macchiato (Dark mode - warm)
+    - scheme: macchiato
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/weather-partly-cloudy
+        name: Switch to Mocha
+
+    # Catppuccin Mocha (Dark mode - warmest)
+    - scheme: mocha
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/weather-cloudy
+        name: Switch to Latte
+  logo: assets/logo.png
+  favicon: assets/logo.png
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.footer
+    - navigation.top
+    - navigation.tracking
+    - search.suggest
+    - search.highlight
+    - search.share
+    - content.code.copy
+    - content.code.annotate
+
+# Extra CSS for Catppuccin themes
+extra_css:
+  - stylesheets/catppuccin.css
+# Navigation structure
+nav:
+  - Home: index.md
+  - Configuration Guide: configuration.md
+
+plugins:
+  - search
+
+
+# Markdown extensions
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.tabbed:
+      alternate_style: true
+  - attr_list
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+
+# Copyright notice
+copyright: Copyright &copy; 2025 ruslanlap
+
+# Additional configuration
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/ruslanlap/mkdocs-catppuccin
+  generator: false

@@ -1,0 +1,4 @@
+include README.md
+include LICENSE
+recursive-include mkdocs_catppuccin *.yml
+recursive-include mkdocs_catppuccin/assets *

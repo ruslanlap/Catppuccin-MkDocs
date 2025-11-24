@@ -1,0 +1,49 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mkdocs-catppuccin"
+version = "0.1.0"
+description = "A soothing pastel theme for MkDocs based on the Catppuccin color palette"
+readme = "README.md"
+requires-python = ">=3.8"
+license = {text = "MIT"}
+authors = [
+    {name = "Catppuccin MkDocs Contributors"}
+]
+keywords = ["mkdocs", "theme", "catppuccin", "material", "documentation"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Documentation",
+    "Topic :: Software Development :: Documentation",
+]
+dependencies = [
+    "mkdocs>=1.5.0",
+    "mkdocs-material>=9.0.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/ruslanlap/Catppuccin-MkDocs"
+Repository = "https://github.com/ruslanlap/Catppuccin-MkDocs"
+Issues = "https://github.com/ruslanlap/Catppuccin-MkDocs/issues"
+Catppuccin = "https://catppuccin.com"
+
+[project.entry-points."mkdocs.themes"]
+catppuccin = "mkdocs_catppuccin"
+
+[tool.setuptools.packages.find]
+include = ["mkdocs_catppuccin*"]
+
+[tool.setuptools.package-data]
+mkdocs_catppuccin = [
+    "*.yml",
+    "assets/**/*",
+]
