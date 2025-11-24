@@ -60,141 +60,141 @@ cd Catppuccin-MkDocs
 pip install -e .
 ```
 
-## 📝 Step-by-Step Configuration Guide
+## 📝 Покрокова Інструкція / Step-by-Step Guide
 
-### Step 1: Install the Theme
+### Крок 1: Встановіть тему / Step 1: Install the Theme
 
 ```bash
 pip install mkdocs-catppuccin
 ```
 
-### Step 2: Create Project Structure
+### Крок 2: Створіть структуру проєкту / Step 2: Create Project Structure
 
-Your MkDocs project should have this structure:
+Ваш проєкт MkDocs повинен мати таку структуру:
 
 ```
 your-project/
 ├── docs/
-│   ├── index.md              # Home page
-│   ├── assets/               # Assets folder (optional)
-│   │   └── logo.png         # Your logo
-│   └── stylesheets/         # CSS folder (optional)
-│       └── extra.css        # Your custom styles
-└── mkdocs.yml               # Configuration file
+│   ├── index.md              # Головна сторінка
+│   ├── assets/               # Папка для ресурсів (необов'язково)
+│   │   └── logo.png         # Ваше лого
+│   └── stylesheets/         # Папка для CSS (необов'язково)
+│       └── extra.css        # Ваші власні стилі
+└── mkdocs.yml               # Файл конфігурації
 ```
 
-### Step 3: Basic Configuration
+### Крок 3: Базова Конфігурація / Step 3: Basic Configuration
 
-Create or edit your `mkdocs.yml` file:
+Створіть або відредагуйте файл `mkdocs.yml`:
 
 ```yaml
-# Basic site information
-site_name: Your Project Name
-site_description: Your documentation description
+# Основна інформація про сайт
+site_name: Назва Вашого Проєкту
+site_description: Опис вашої документації
 site_url: https://yourname.github.io/your-project/
 
-# Catppuccin theme configuration
+# Налаштування теми Catppuccin
 theme:
   name: catppuccin
   
-  # Choose color scheme (pick one or multiple)
+  # Вибір кольорової схеми (оберіть одну або кілька)
   palette:
-    # Light theme - Catppuccin Latte
+    # Світла тема - Catppuccin Latte
     - scheme: latte
       toggle:
         icon: material/weather-sunny
-        name: Switch to dark mode
+        name: Перемкнути на темну тему
     
-    # Dark theme - Catppuccin Mocha
+    # Темна тема - Catppuccin Mocha
     - scheme: mocha
       toggle:
         icon: material/weather-night
-        name: Switch to light mode
+        name: Перемкнути на світлу тему
   
-  # Add your logo (optional)
-  logo: assets/logo.png        # Path to your logo
-  favicon: assets/logo.png     # Browser tab icon
+  # Додайте своє лого (необов'язково)
+  logo: assets/logo.png        # Шлях до вашого лого
+  favicon: assets/logo.png     # Іконка для вкладки браузера
   
-  # Useful features
+  # Корисні функції
   features:
-    - navigation.tabs          # Navigation tabs
-    - navigation.sections      # Navigation sections
-    - navigation.top           # Back to top button
-    - search.suggest           # Search suggestions
-    - search.highlight         # Highlight search results
-    - content.code.copy        # Copy code button
+    - navigation.tabs          # Вкладки навігації
+    - navigation.sections      # Секції в навігації
+    - navigation.top           # Кнопка "Вгору"
+    - search.suggest           # Підказки при пошуку
+    - search.highlight         # Підсвічування результатів пошуку
+    - content.code.copy        # Кнопка копіювання коду
 
-# Your site navigation
+# Навігація вашого сайту
 nav:
-  - Home: index.md
-  - About: about.md
+  - Головна: index.md
+  - Про проєкт: about.md
 
-# Plugins
+# Плагіни
 plugins:
-  - search                     # Documentation search
+  - search                     # Пошук по документації
 ```
 
-### Step 4: Custom Styles (Optional)
+### Крок 4: Додаткові Стилі (Необов'язково) / Step 4: Custom Styles (Optional)
 
-**IMPORTANT:** The theme already includes all Catppuccin styles! You **DO NOT need** to add `extra_css` for basic usage.
+**ВАЖЛИВО:** Тема вже включає всі стилі Catppuccin! Вам **НЕ потрібно** додавати `extra_css` для базового використання.
 
-Add `extra_css` **ONLY if** you want to customize something:
+Додайте `extra_css` **тільки якщо** ви хочете змінити щось своє:
 
 ```yaml
-# Add this ONLY if you need custom styles
+# Додайте це ТІЛЬКИ якщо потрібні власні стилі
 extra_css:
-  - stylesheets/extra.css      # Your custom styles
+  - stylesheets/extra.css      # Ваші власні стилі
 ```
 
-Create `docs/stylesheets/extra.css` file for your customizations:
+Створіть файл `docs/stylesheets/extra.css` для ваших змін:
 
 ```css
-/* Example: change heading color */
+/* Приклад: змінити колір заголовків */
 .md-typeset h1 {
   color: #c6a0f6;  /* Catppuccin Mauve */
 }
 ```
 
-### Step 5: All 4 Color Schemes
+### Крок 5: Всі 4 Кольорові Схеми / Step 5: All 4 Color Schemes
 
-If you want to give users a choice of all 4 Catppuccin variants:
+Якщо хочете дати користувачам вибір з усіх 4 варіантів Catppuccin:
 
 ```yaml
 theme:
   name: catppuccin
   palette:
-    # Light theme - Latte
+    # Світла тема - Latte
     - scheme: latte
       toggle:
         icon: material/weather-sunny
-        name: Switch to Frappé
+        name: Перемкнути на Frappé
     
-    # Dark theme - Frappé (coolest)
+    # Темна тема - Frappé (найхолодніша)
     - scheme: frappe
       toggle:
         icon: material/weather-night
-        name: Switch to Macchiato
+        name: Перемкнути на Macchiato
     
-    # Dark theme - Macchiato (warm)
+    # Темна тема - Macchiato (тепла)
     - scheme: macchiato
       toggle:
         icon: material/weather-partly-cloudy
-        name: Switch to Mocha
+        name: Перемкнути на Mocha
     
-    # Dark theme - Mocha (warmest)
+    # Темна тема - Mocha (найтепліша)
     - scheme: mocha
       toggle:
         icon: material/weather-cloudy
-        name: Switch to Latte
+        name: Перемкнути на Latte
 ```
 
-### Step 6: Complete Configuration Example
+### Крок 6: Повний Приклад Конфігурації / Step 6: Complete Example
 
-Here's a complete `mkdocs.yml` example with all features:
+Ось повний приклад `mkdocs.yml` з усіма можливостями:
 
 ```yaml
-site_name: My Documentation
-site_description: Beautiful documentation with Catppuccin theme
+site_name: Моя Документація
+site_description: Красива документація з темою Catppuccin
 site_url: https://yourname.github.io/your-project/
 repo_url: https://github.com/yourname/your-project
 repo_name: yourname/your-project
@@ -235,16 +235,16 @@ theme:
     - content.code.copy
     - content.code.annotate
 
-# Navigation
+# Навігація
 nav:
-  - Home: index.md
-  - Configuration: configuration.md
+  - Головна: index.md
+  - Конфігурація: configuration.md
 
-# Plugins
+# Плагіни
 plugins:
   - search
 
-# Markdown extensions
+# Розширення Markdown
 markdown_extensions:
   - admonition
   - pymdownx.details
@@ -257,10 +257,10 @@ markdown_extensions:
   - toc:
       permalink: true
 
-# Copyright
-copyright: Copyright &copy; 2025 Your Name
+# Копірайт
+copyright: Copyright &copy; 2025 Ваше Ім'я
 
-# Additional settings
+# Додаткові налаштування
 extra:
   social:
     - icon: fontawesome/brands/github
@@ -268,12 +268,12 @@ extra:
   generator: false
 ```
 
-### 📌 Important Notes
+### 📌 Важливі Примітки / Important Notes
 
-1. **Logo**: Place your `logo.png` file in the `docs/assets/` folder
-2. **CSS**: The theme already includes all Catppuccin styles - `extra_css` is only needed for your own customizations
-3. **Color schemes**: You can use a single scheme or all four with a toggle
-4. **Testing**: Run `mkdocs serve` to preview your documentation locally
+1. **Лого**: Покладіть ваш файл `logo.png` у папку `docs/assets/`
+2. **CSS**: Тема вже включає всі стилі Catppuccin - `extra_css` потрібен тільки для ваших власних змін
+3. **Кольорові схеми**: Можете використати одну схему або всі чотири з перемикачем
+4. **Тестування**: Запустіть `mkdocs serve` щоб побачити результат локально
 
 ## 🎨 Color Schemes
 
@@ -387,6 +387,3 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - **PyPI**: [pypi.org/project/mkdocs-catppuccin](https://pypi.org/project/mkdocs-catppuccin)
 - **Catppuccin**: [catppuccin.com](https://catppuccin.com)
 - **Material for MkDocs**: [squidfunk.github.io/mkdocs-material](https://squidfunk.github.io/mkdocs-material)
-
-
-# Catppuccin-MkDocs
